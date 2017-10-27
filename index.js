@@ -8,11 +8,10 @@ var through = require('through2'),
   File = gutil.File;
 
 
-module.exports = function (action, args, params, gae_dir) {
+module.exports = function (action, args, params) {
   action = action || 'dev_appserver.py';
   args = args || [];
   params = params || {};
-  gae_dir = gae_dir || __dirname + '/node_modules/google-app-engine';
 
   var proc;
 
@@ -37,7 +36,7 @@ module.exports = function (action, args, params, gae_dir) {
   function runScript(file, args, params, cb) {
     var scriptArgs = args.concat(parseParams(params));
     gutil.log('[gulp-gae]', scriptArgs);
-    proc = spawn(gae_dir + '/' + file, scriptArgs);
+    proc = spawn(file, scriptArgs);
     proc.stdout.pipe(process.stdout);
     proc.stderr.pipe(process.stderr);
     cb && cb();
@@ -62,7 +61,6 @@ module.exports = function (action, args, params, gae_dir) {
 
     runScript(action, args, params, cb);
 
-    process.on('SIGINT', stopScript);
     process.on('exit', stopScript);
   }
 
