@@ -1,15 +1,46 @@
 {
-  "name": "gulp-gae",
-  "version": "0.0.3",
+  "_from": "gulp-gae",
+  "_id": "gulp-gae@0.0.4",
+  "_inBundle": false,
+  "_integrity": "sha1-VjMERGgnXNSzuLFxUnx/UCvMA5E=",
+  "_location": "/gulp-gae",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "gulp-gae",
+    "name": "gulp-gae",
+    "escapedName": "gulp-gae",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/gulp-gae/-/gulp-gae-0.0.4.tgz",
+  "_shasum": "5633044468275cd4b3b8b171527c7f502bcc0391",
+  "_spec": "gulp-gae",
+  "_where": "/Users/hoppenheim/Dev/Google/gweb-shopping-il-2017",
+  "author": {
+    "name": "Maciej Zasada",
+    "email": "hello@maciejzasada.com"
+  },
+  "bugs": {
+    "url": "https://github.com/maciejzasada/gulp-gae/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "gulp-util": "^3.0.6",
+    "through2": "^2.0.0"
+  },
+  "deprecated": false,
   "description": "Gulp Google App Engine Plugin",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "devDependencies": {
+    "gulp": "^3.9.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/maciejzasada/gulp-gae.git"
-  },
+  "homepage": "https://github.com/maciejzasada/gulp-gae#readme",
   "keywords": [
     "gulp",
     "gae",
@@ -18,18 +49,15 @@
     "engine",
     "appengine"
   ],
-  "author": "Maciej Zasada <hello@maciejzasada.com>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/maciejzasada/gulp-gae/issues"
+  "main": "index.js",
+  "name": "gulp-gae",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maciejzasada/gulp-gae.git"
   },
-  "homepage": "https://github.com/maciejzasada/gulp-gae#readme",
-  "devDependencies": {
-    "gulp": "^3.9.0"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {
-    "google-app-engine": "klarkc/google-app-engine-php",
-    "gulp-util": "^3.0.6",
-    "through2": "^2.0.0"
-  }
+  "version": "0.0.4"
 }
