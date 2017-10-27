@@ -1,6 +1,8 @@
 gulp-gae
 ========
 
+Forked from [maciejzasada/gulp-gae](https://github.com/maciejzasada/gulp-gae) to support env based app.yaml loading.
+
 # Installation
 `npm install gulp-gae --save-dev`
 
